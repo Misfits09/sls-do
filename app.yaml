@@ -15,3 +15,12 @@ static_sites:
       branch: master
       deploy_on_push: true
     source_dir: ./frontend
+    build_command: npm run export
+    output_dir: _static
+envs:
+  - key: FRONT_URL
+    value: "${allstatics.PUBLIC_URL}"
+    scope: RUN_TIME
+  - key: BACK_URL
+    value: "${allfunctions.PUBLIC_URL}"
+    scope: BUILD_TIME
