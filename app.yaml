@@ -1,6 +1,6 @@
 name: myapp
-services:
-  - name: functions
+functions:
+  - name: allfunctions
     github:
       repo: Misfits09/sls-do
       branch: master
@@ -9,7 +9,7 @@ services:
     routes:
       - path: /api
 static_sites:
-  - name: main
+  - name: allstatics
     github:
       repo: Misfits09/sls-do
       branch: master
