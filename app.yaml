@@ -1,0 +1,9 @@
+name: myapp
+services:
+  - name: functions
+    source_dir: ./backend
+    routes:
+      - path: /api
+static_sites:
+  - name: main
+    source_dir: ./frontend
