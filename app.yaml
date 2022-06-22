@@ -1,9 +1,17 @@
 name: myapp
 services:
   - name: functions
+    github:
+      repo: Misfits09/sls-do
+      branch: master
+      deploy_on_push: true
     source_dir: ./backend
     routes:
       - path: /api
 static_sites:
   - name: main
+    github:
+      repo: Misfits09/sls-do
+      branch: master
+      deploy_on_push: true
     source_dir: ./frontend
