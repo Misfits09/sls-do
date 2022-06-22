@@ -12,6 +12,7 @@ packages:
         runtime: 'nodejs:default'
         web: true
         parameters: {}
-        environment: {}
+        environment:
+          FRONT_URL: "${FRONT_URL}"
         annotations: {}
         limits: {}
