@@ -10,7 +10,7 @@ function main(args) {
     console.log(greeting)
     return {"body": template({
       value: greeting,
-      debug: JSON.stringify(args)
+      debug: JSON.stringify(process?.env)
     })}
   }
 
